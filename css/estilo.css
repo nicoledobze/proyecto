@@ -129,6 +129,11 @@ ul {
     justify-content: space-evenly;
 }
 
+.tortas:hover {
+    width: 300px;
+    height: 300px;
+}
+
 
 footer {
     height: 100px;
