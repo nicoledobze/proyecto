@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/* GENERAL */
+.logoPrincipal {
+    width: 90px;
+}
+
+.tituloPrincipal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #DAA89B;
+    margin: 10px;
+    border: 2px black solid;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+ 
+}
+
+h1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: #DAA89B;
+    margin: 10px;
+    border: 2px black solid;
+    color: #2C514C;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #2C514C;
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic solid;
+    margin: 30px;
+}
+
+p {
+    margin: 15px;
+}
+
+h3 {
+    color: #2C514C;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section p {
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* CREÁ TU TORTA */
+.creaOpciones {
+    display: flex;
+    border: 100px;
+    margin: auto;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.opcion {
+    height: 250px;
+    width: 250px;
+    border: 2px black solid;
+    border-radius: 4px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #2C514C;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+}
+
+li {
+    /* margin-left: 10px; */
+    list-style-type: none;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 15px;
+    background-color: #AE847E;
+    border: 2px black solid;
+}
+
+/* INICIO */
+
+.videoPortada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    margin: 100px;
+    padding: 100px;
+}
+
+/* MENÚ */
+
+.menuTortas {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tortas {
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    justify-content: space-evenly;
+}
+
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: #DAA89B ;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* CONTACTO */
+
+#contacto {
+    margin-bottom: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+}
+
+.campo{
+    display: block;
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+/* UBICACIÓN */
+
+.ubicacion {
+    width: 40vw;
+    margin: 20px 20px;
+    margin-right: 20px;
+}
+
+/* BOTON PEDIDO */
+.botonPedido {
+    width: 80px;
+    position: fixed;
+    top: 0;
+    bottom: 10px;
+    right: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;  
+}
+
+/* GRID - RESPONSIVE */
+
+header {
+    grid-area: header;
+}
+
+.contenedorVideo {
+    grid-area: videoCentral;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* VERSIÓN ESCRITORIO */
+@media (min-width:1024px) {
+    .bodyPadreGrid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "header header header"
+        "videoCentral videoCentral videoCentral"
+        "footer footer footer";
+        grid-column: 10px;
+        grid-row: 10px;
+    }
+}
+
+
+/* VERSIÓN TABLETA */
+@media (min-width: 768px) {
+    .bodyPadreGrid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "header header"
+        "videoCentral videoCentral"
+        "footer footer";
+        gap: 20px;
+    }
+}
+
+@media (max-width:900px) {
+    .bodyPadreGrid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto ;
+        grid-template-areas:
+        "header"
+        "videoCentral"
+        "footer";
+        gap: 2px;
+    }
+    
+}
+
