@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Dora's Bakery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="shortcut icon" href="../img/logo.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
@@ -14,15 +15,32 @@
     <header>
         <a href="index.html"> <img src="../img/logo.jpeg" class="logoPrincipal" alt="logo"></a>
         <h1>Comunicate con nosotras</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="nosotras.html">Nosotras</a></li>
-                <li><a href="menu.html">Menú</a></li>
-                <li><a href="crea.html">Creá</a></li>
-                <li><a href="envios.html">Envíos</a></li>
-                <!-- <li><a href="https://www.instagram.com/doras.bakery" target="_blank">Instagram</a></li> -->
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotras.html">Nosotras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="crea.html">Creá</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="envios.html">Envíos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <br><br>
@@ -56,7 +74,8 @@
         <p>Dora's Bakery - Derechos reservados</p>
         <!-- <p><strong><a href="https://www.instagram.com/doras.bakery" target="_blank">Seguinos en Instagram</a></strong></p> -->
     </footer>
-
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>
